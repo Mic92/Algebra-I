@@ -1,0 +1,7 @@
+# Ausgaben von Latex
+*.aux
+*.log
+*.out
+# Auctex spezifisches Verzeichnis
+auto/**
+*.synctex.gz
