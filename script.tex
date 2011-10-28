@@ -1,24 +1,33 @@
+%---------------Grundeinstellungen---------------------------------------------------------
 \documentclass[a4paper,12pt, DIV12]{scrartcl}
-%Trennungen, Schriftsatz; neue Deutsche Rechtschreibung
+% Trennungen, Schriftsatz; neue Deutsche Rechtschreibung
 \usepackage[ngerman]{babel}
-%Umlaute, Sonderzeichen...
-\usepackage[T1]{fontenc}
-%Für Betriebssysteme mit utf8-Codierung
+\usepackage[T1]{fontenc} % Umlaute, Sonderzeichen...
+% Für Betriebssysteme mit utf8-Codierung
 \usepackage{ucs}
 \usepackage[utf8x]{inputenc}
-%ansonsten(z.B. Windows):
-%\usepackage[ansinew]{inputenc}
-%Paket um Grafiken einzubinden. Evtl. muss unter Windows
+% ansonsten(z.B. Windows):
+% \usepackage[ansinew]{inputenc}
+%-----------------------------------------------------------------------------------------
+
+%------------------Packete----------------------------------------------------------------
+% Paket um Grafiken einzubinden. Evtl. muss unter Windows
 % mit \usepackage[dvips]{graphicx} der dvips-Treiber für EPS-Grafiken geladen werden
 \usepackage{graphicx}
 \usepackage{multicol} % Paket für mehrspaltige Dokumente
 \usepackage{float}    % Paket um Bilder in Fliess-Umgebungen einzubinden
 \usepackage{amsmath}  % stellt die align-Umgebung zum Einrücken von Formeln zu Verfügung
 \usepackage{amssymb}  % Extra mathematische Symbole
+\usepackage{color}    % Farbdefinitionen
 \usepackage{hyperref} % fuer klickbare Links
 \usepackage{listings} % Quellcode farbig darstellen
 \usepackage{lastpage} % Spezielles Paket um die Seiten zu zählen
 \usepackage{scrpage2} % Kopf- und Fusszeilen
+%\usepackage{pst-circ} % Elektronische Schaltungen
+%\usepackage{pgfplots} % Für Diagramme
+%----------------------------------------------------------------------------------------
+
+%----------------Konfiguration-----------------------------------------------------------
 \ihead{Inoffizielles Script zur Vorlesung Algebra 1, Prof. Schmidt}
 %\chead{}
 \ohead{Seite \thepage}
@@ -29,13 +38,27 @@
 \setheadsepline{1pt}    % Dicke der Trennlinie Kopfzeile - Text
 \setfootsepline{0.5pt}  % Dicke der Trennlinie Fusszeile - Text
 \pagestyle{scrheadings} % gemachte Einstellungen anwenden
-%Linienabstand
-\usepackage{setspace}
-\onehalfspacing              %1.5 Zeilenabstand; 1 = \singlespacing; 2 = \doublespacing
-%Absatzeinzug
+\usepackage{setspace}   % Linienabstand
+\onehalfspacing         % 1.5 Zeilenabstand; 1 = \singlespacing; 2 =
+% \doublespacing
+% schönere Hyperlinkfarben
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\hypersetup{
+  colorlinks,
+  linkcolor=darkblue,
+  filecolor=darkgreen,
+  urlcolor=darkred,
+  citecolor=darkblue
+}
+% Absatzeinzug
 %\setlength{\parindent}{1em} % 1em = Grösse, die ein grosses M der aktuellen Schrift
-\setlength{\parindent}{0pt}  % Kein Einzug, damit sparrt man sich die ganzen \\ nach einem Absatz!
-% Beginn des eigentlichen Dokuments(also des Inhalts
+\setlength{\parindent}{0pt}  % Kein Einzug, damit spart man sich die
+% ganzen \\ nach einem Absatz!
+%----------------------------------------------------------------------------------------
+
+%----------------Beginn des eigentlichen Dokuments(also des Inhalts)---------------------
 \begin{document}
 \section{Mengen}
 \subsection{Grundlegendes}
