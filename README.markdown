@@ -1,6 +1,5 @@
----------------------------------------------------------------------
 Dies ist das inoffizielle Skript für Algebra I bei Professor Schmidt.
----------------------------------------------------------------------
+=====================================================================
 
 Falls ihr euch beteiligen wollt, legt euch bei Github einen Account.
 Informationen über LaTeX bzw. zur Benutzung von Git findet ihr im Netz genug.
