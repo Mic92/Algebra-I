@@ -14,6 +14,7 @@
 % Paket um Grafiken einzubinden. Evtl. muss unter Windows
 % mit \usepackage[dvips]{graphicx} der dvips-Treiber für EPS-Grafiken geladen werden
 \usepackage{graphicx}
+\usepackage{subfigure}  % Bilder platzieren(z.B. nebeneinander)
 \usepackage{multicol} % Paket für mehrspaltige Dokumente
 \usepackage{float}    % Paket um Bilder in Fliess-Umgebungen einzubinden
 \usepackage{amsmath}  % stellt die align-Umgebung zum Einrücken von Formeln zu Verfügung
@@ -161,10 +162,19 @@ D.h. die Abbildung erzeugt sämtliche Paare von Elementen aus A, die den selben 
 \subsubsection{Typen von Abbildungen}
 Seinen A und B zwei Mengen und $f:{A}\longrightarrow{B}$ eine Abbildungsvorschrift.
 Dann gibt es 3 besondere Typen von Abbildungen:
-\subparagraph*{surjektive Abbildungen:} \emph{alle} Elemente von B mindestens einmal erfassen.
-\subparagraph*{injektive Abbildungen:} alle Elemente von A erhalten \emph{unterschiedliche} Elemente aus B
-\subparagraph*{bijektive Abbildungen:} surjektiv und injektiv zu gleich: alle A erhalten genau ein B und alle B wergen getroffen.
+
+\begin{description}
+\item[surjektive Abbildung] \emph{alle} Elemente von B mindestens einmal erfassen
+\item[injektive Abbildungen] alle Elemente von A erhalten \emph{unterschiedliche} Elemente aus B
+\item[bijektive Abbildungen] \emph{surjektiv und injektiv} zu gleich: alle A erhalten genau ein B und alle B werden getroffen.
 Dies impliziert die Umkehrbarkeit der Funktion.
+\end{description}
+
+\begin{figure}
+\subfigure[surjektive Abbildung]{\includegraphics[width=4cm]{images/Surjection.png}}\hfill
+\subfigure[injektive Abbildung]{\includegraphics[width=4cm]{images/Injection.png}}\hfill
+\subfigure[bijektive Abbildungen]{\includegraphics[width=4cm]{images/Bijection.png}}
+\end{figure}
 
 \subparagraph*{Identität:} eine Sonderform der bijektiven Abbildung. Jedes Element wird sich selbst zugeordnet
 \subsubsection{Mächtigkeit einer Abbildung}
