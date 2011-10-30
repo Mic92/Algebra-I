@@ -100,7 +100,7 @@ Definitionen getroffen werden, um deren Mächtigkeit zu beschreiben.
 \end{math}
 \subsubsection*{Gleichmächtigkeit}
 Seien A und B zwei beliebige Mengen.
-Dann heißt A gleichmächtig zur Menge B, wenn eine Bijektion (\({f:a}\rightarrow{B}\)) gebildet
+Dann heißt A gleichmächtig zur Menge B, wenn eine Bijektion (\({f:A}\rightarrow{B}\)) gebildet
 werden kann. Das bedeutet, dass eine Vorschrift existiert, welches
 jedem Element der Menge A genau ein Element der Menge B zuordnet.
 Dabei werden alle Elemente der Menge B einmal erfasst. Diese
@@ -151,7 +151,7 @@ Ein andere Bezeichnung für Abbildung ist \emph{Funktion}.
 Sei $f:{A}\longrightarrow{B}$ eine Abbildungsvorschrift.
 Dann ist:
 \begin{align*}
-   kern(f) := \{(a,c) \in A \times A\ | f(a)=f(c)\}
+   ker(f) := \{(a,c) \in A \times A\ | f(a)=f(c)\}
 \end{align*}
 eine Menge, der sogenannte Kern von f.
 
@@ -167,7 +167,7 @@ Dann gibt es 3 besondere Typen von Abbildungen:
 \item[surjektive Abbildung] \emph{alle} Elemente von B mindestens einmal erfassen
 \item[injektive Abbildungen] alle Elemente von A erhalten \emph{unterschiedliche} Elemente aus B
 \item[bijektive Abbildungen] \emph{surjektiv und injektiv} zu gleich: alle A erhalten genau ein B und alle B werden getroffen.
-Dies impliziert die Umkehrbarkeit der Funktion.
+Dies impliziert die Umkehrbarkeit der Funktion. Eine Sonderform der bijektiven Abbildung ist die \emph{Identität}. Dabei wird jedes Element sich selbst zugeordnet.
 \end{description}
 
 \begin{figure}
@@ -176,7 +176,6 @@ Dies impliziert die Umkehrbarkeit der Funktion.
 \subfigure[bijektive Abbildungen]{\includegraphics[width=4cm]{images/Bijection.png}}
 \end{figure}
 
-\subparagraph*{Identität:} eine Sonderform der bijektiven Abbildung. Jedes Element wird sich selbst zugeordnet
 \subsubsection{Mächtigkeit einer Abbildung}
 Seien A und B Mengen.
 Dann bezeichne $B^A$ oder $Map(A,B)$ die Menge aller Abbildungen von A nach B.
