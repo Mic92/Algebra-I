@@ -5,3 +5,8 @@
 # Auctex spezifisches Verzeichnis
 auto/**
 *.synctex.gz
+# Emacs's Backupdateien
+\#*#
+# vim's Backupdateien
+*~
+*.swp
