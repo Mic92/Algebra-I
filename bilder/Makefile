@@ -1,9 +1,10 @@
-# Wandelt svg in png um
-# es wird convert von imagemagick benötigt!
-%.png: %.svg; convert -background none '$<' '$@'
+# Wandelt svg in pdf um
+# es wird inkscape benötigt!
+%.pdf: %.svg; inkscape --file='$<' --export-area-drawing --without-gui --export-pdf='$@'
 SVG = $(wildcard *.svg)
-PNG = $(patsubst %.svg,%.png,$(SVG))
+PDF = $(patsubst %.svg,%.pdf,$(SVG))
 
-all: $(PNG)
+all:  $(PDF) 
+.PHONEY: clean
 clean:
-	rm -f $(PNG)
+	rm -f *.pdf
