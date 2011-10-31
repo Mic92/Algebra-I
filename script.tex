@@ -54,9 +54,10 @@
   citecolor=darkblue
 }
 % Absatzeinzug
-%\setlength{\parindent}{1em} % 1em = Grösse, die ein grosses M der aktuellen Schrift
-\setlength{\parindent}{0pt}  % Kein Einzug, damit spart man sich die
-% ganzen \\ nach einem Absatz!
+\setlength{\parindent}{0pt}  % Kein Einzug der ersten 1.Zeile eines Absatzes
+% Verzeichnis in dem nach Bildern gesucht wird
+% Sollte laut Dokumentation auch unter Windows gehen. Kann das jemand bestätigen?
+\graphicspath{{bilder/}}
 %----------------------------------------------------------------------------------------
 
 %----------------Beginn des eigentlichen Dokuments(also des Inhalts)---------------------
@@ -116,7 +117,7 @@ Stattdessen sollte man an die Definition der Gleichmächtigkeit denken: 2 Mengen
 \begin{figure}[b]
   \centering
   \caption{Beispiel für eine Abbildung \(\#{\mathbb N} = \#{\mathbb Z}\)}
-  \includegraphics[scale=0.5]{images/ngleichz.png}
+  \includegraphics[scale=0.5]{ngleichz.png}
 \end{figure}
 Es werden also die 0 auf die 0, die ungeraden Zahlen auf die positiven Zahlen und die geraden Zahlen auf die negativen Zahlen abgebildet. Dies ist aufgrund der Unendlichkeit der beiden Mengen ohne Probleme möglich.
 
@@ -160,9 +161,9 @@ Dies impliziert die Umkehrbarkeit der Funktion. Eine Sonderform der bijektiven A
 \end{description}
 
 \begin{figure}
-\subfigure[surjektive Abbildung]{\includegraphics[width=4cm]{images/Surjection.png}}\hfill
-\subfigure[injektive Abbildung]{\includegraphics[width=4cm]{images/Injection.png}}\hfill
-\subfigure[bijektive Abbildungen]{\includegraphics[width=4cm]{images/Bijection.png}}
+\subfigure[surjektive Abbildung]{\includegraphics[width=4cm]{Surjection.png}}\hfill
+\subfigure[injektive Abbildung]{\includegraphics[width=4cm]{Injection.png}}\hfill
+\subfigure[bijektive Abbildungen]{\includegraphics[width=4cm]{Bijection.png}}
 \end{figure}
 
 \subsubsection{Mächtigkeit einer Abbildung}
