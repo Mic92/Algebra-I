@@ -22,5 +22,6 @@ Facebook -> Gruppe "IST 2011 TU-Dresden"
 Hall of Fame (Autoren)
 ----------------------
 chaosbastler (Christian)
+js75 (Jan)
 
 [github-pdf]: https://github.com/Mic92/Algebra-I/raw/master/script.pdf
