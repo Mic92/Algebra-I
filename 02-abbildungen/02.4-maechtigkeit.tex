@@ -3,13 +3,31 @@ Seien A und B Mengen.
 Dann bezeichnet $B^A$ oder $Map(A,B)$ die Menge aller Abbildungen von A nach B.
 \paragraph*{Satz:}
 Für A, B endliche Mengen gilt:
-$$ |B^A| = {|B|}^{|A|} $$
+$$ |B^A| = {|A|}^{|B|} $$
 
-\paragraph*{injektive Abbildungen}
-Die Mächtigkeit aller injektiven Abbildungen (= Permutation):
+\paragraph*{bijektive Abbildungen}
+Mächtigkeit aller bijektiven Abbildungen entspricht einer \emph{Permutation}:
 \begin{align*}
   A &\rightarrow B \\
-  a = |A| \; &b = |B| \\
+  (|A|)! &= (|B|)!
+\end{align*}
+
+\paragraph*{injektive Abbildungen}
+Die Mächtigkeit aller injektiven Abbildungen entspricht einer
+\emph{Variation} ohne Zurücklegen:
+\begin{align*}
+  A &\rightarrow B \\
+  a &= |A| \; b = |B| \\
   {{b}\choose{a}} * a!
   &= \frac{b!}{(b-a)!}
+\end{align*}
+
+\paragraph*{surjektive Abbildung}
+Die Mächtigkeit aller surjektiven Abbildungen lässt sich mithilfe der
+Stirlingzahl 2. Art ($S_{n,r}$) berechnen.
+\begin{align*}
+  A &\rightarrow B \\
+  a &= |A| \; b = |B| \\
+  b!    &\cdot S_{(a,b)}\\
+  S(a,b)&=\frac{1}{b!}\sum_{j=1}^{b}(-1)^{b-j}{b \choose j}j^a
 \end{align*}
