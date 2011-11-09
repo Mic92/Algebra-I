@@ -1,16 +1,36 @@
-\subsection{Typen von Abbildungen}
-Seinen A und B zwei Mengen und $f:{A}\longrightarrow{B}$ eine Abbildungsvorschrift.
-Dann gibt es 3 besondere Typen von Abbildungen:
-
+%*********************************************************
+% Änderung vom 09.11.11: Bisherige Definition entfernt und durch
+% Definition von Prof. Schmidt ersetzt. (js75)
+%*********************************************************
+\subsection{Typen von Abbildungen}\label{kap_typabb}
+\subsubsection{Definition}
 \begin{description}
-\item[surjektive Abbildung] \emph{alle} Elemente von B mindestens einmal erfassen
-$$ \forall b \in B \exists a \in A : f(a)=b $$
-\item[injektive Abbildungen] alle Elemente von A erhalten \emph{unterschiedliche} Elemente aus B
-$$ \forall a_1,a_2  \in A : f(a_1)=f(a_2) \Rightarrow a_1 = a_2 $$
-\item[bijektive Abbildungen] \emph{surjektiv und injektiv} zu gleich: alle A erhalten genau ein B und alle B werden getroffen.
-Dies impliziert die Umkehrbarkeit der Funktion. Eine Sonderform der bijektiven
-Abbildung ist die \emph{Identität}. Dabei wird jedes Element sich selbst zugeordnet.
-$$ \forall b \in B \exists ! a \in A : f(a) = b $$
+\item Eine Abbildung $f \colon A \rightarrow B$ heiße \emph{injektiv} falls für
+$x, t \in A$ aus $x \neq t$ stets $fx \neq ft$ folgt (es gibt also keine Kollisionen).
+\item Es heiße $f$ \emph{surjektiv}, falls zu jedem $y \in B$ ein $x \in A$
+existiert mit $fx = y$ (es wird also jedes Element der Zielmenge abgedeckt).
+\item Ferner heiße $f$ \emph{bijektiv}, falls $f$ injektiv und surjektiv ist.
+\end{description}
+Ist $f \colon A \rightarrow B$ eine Abbildung, so sei für $X \subseteq A$ stets
+$fX \coloneq f[X] \coloneq \{fx | x \in X\}$ die Menge der Bilder von $X$ unter
+$f$.
+
+Ferner heiße $\text{Bild}(f) = \text{Im}(f) \coloneq fA$ die
+\emph{Bildmenge}\footnote{Bild = Image} von $f$. $f$ ist genau dann surjektiv,
+wenn (gdw\footnote{im englischen Sprachraum \emph{iff} = if and only if}) $fA = B$
+gilt, das heißt die Bildmenge von $f$ ist gleich der Zielmenge von $f$. Daraus
+folgt: $fX \subseteq fA$
+
+\subsubsection{Bezeichnungen}
+\begin{description}
+\item Sind $A$ und $B$ Mengen, so bezeichnen $B^A \coloneq \text{Abb}(A,B)
+\coloneq \text{Map}(A,B)$ die Menge aller Abbildungen von $A$ nach $B$.
+\item $\text{Surj}(A,B)$ sei die Menge aller surjektiven Abbildungen
+(\emph{Surjektionen}) von $A$ nach $B$,
+\item $\text{Inj}(A,B)$ sei die Menge aller injektiven Abbildungen
+(\emph{Injektionen}) von $A$ nach $B$,
+\item $\text{Bij}(A,B)$ sei die Menge aller bijektiven Abbildungen
+(\emph{Bijektionen}) von $A$ nach $B$.
 \end{description}
 
 \begin{figure}
