@@ -1,0 +1,9 @@
+Zur besseren Übersicht werden hier alle selbst definierten Befehle aufgeführt.
+
+\Pot stellt das P der Potenzmenge zur besonderen Kennzeichnung in einer anderen Schriftart dar, keine Argumente.
+
+\Def, \Wert lassen die von Prof. Schmidt eingeführten Def() und Wert() erscheinen (nicht kursiv), keine Argumente.
+
+\Abb, \Map werden als Abb() und Map() dargestellt, nicht kursiv, keine Argumente.
+
+\Inj, \Surj, \Bij werden als Inj(), Surj(), Bij() dargestellt, nicht kursiv, keine Argumente.
