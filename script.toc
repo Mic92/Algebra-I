@@ -11,8 +11,13 @@
 \contentsline {subparagraph}{Erl\IeC {\"a}uterung zu \relax $\#{\mathbb N} = \#{\mathbb Z}\relax \GenericError { }{LaTeX Error: Bad math environment delimiter}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}:}{4}{figure.1}
 \contentsline {section}{\numberline {2}Abbildungen}{6}{section.2}
 \contentsline {subsection}{\numberline {2.1}Definition}{6}{subsection.2.1}
-\contentsline {paragraph}{Hinweis:}{6}{section*.14}
-\contentsline {subsection}{\numberline {2.2}Kern einer Funktion}{7}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Beispiel}{7}{subsubsection.2.2.1}
-\contentsline {subsection}{\numberline {2.3}Typen von Abbildungen}{8}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}M\IeC {\"a}chtigkeit einer Abbildung}{9}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.1.1}Beispiel}{6}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Notation}{6}{subsubsection.2.1.2}
+\contentsline {paragraph}{Anmerkungen}{6}{section*.13}
+\contentsline {paragraph}{Hinweis:}{7}{section*.15}
+\contentsline {subsection}{\numberline {2.2}Kern einer Funktion}{8}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Beispiel}{8}{subsubsection.2.2.1}
+\contentsline {subsection}{\numberline {2.3}Typen von Abbildungen}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Definition}{9}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Bezeichnungen}{9}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}M\IeC {\"a}chtigkeit einer Abbildung}{10}{subsection.2.4}
