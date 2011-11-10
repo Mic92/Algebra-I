@@ -6,15 +6,17 @@ Für $A, B$ endliche Mengen gilt:
 $$ |B^A| = {|A|}^{|B|} $$
 
 \paragraph*{bijektive Abbildungen}
-Mächtigkeit aller bijektiven Abbildungen entspricht einer \emph{Permutation}:
+Sei $|A|=|B|$ endlich. Die Mächtigkeit der Menge aller bijektiven
+Abbildungen von A nach B entspricht der Anzahl der Permutationen auf
+einer |A|-elementigen Menge.
 \begin{align*}
   A &\rightarrow B \\
   (|A|)! &= (|B|)!
 \end{align*}
 
 \paragraph*{injektive Abbildungen}
-Die Mächtigkeit aller injektiven Abbildungen entspricht einer
-\emph{Variation} ohne Zurücklegen:
+Seien |A| und |B| endlich. Die Mächtigkeit der Menge aller injektiven
+Abbildungen von A nach B entspricht einer \emph{Variation} ohne Zurücklegen:
 \begin{align*}
   A &\rightarrow B \\
   a &= |A| \; b = |B| \\
@@ -22,10 +24,12 @@ Die Mächtigkeit aller injektiven Abbildungen entspricht einer
   &= \frac{b!}{(b-a)!}
 \end{align*}
 
-\subparagraph*{Anmerkung:} Für den Sonderfall $|A|=|B|$ führt die Formel auf die Formel für die bijektiven Abbildungen zurück. Dies bedeutet, dass auch alle injektiven Abbildungen Bijektionen seien müssen.
+\subparagraph*{Anmerkung:} Für den Sonderfall $|A|=|B|$ führt die Formel auf die Formel für die bijektiven Abbildungen zurück. Das bedeutet, dass im Fall $|A|=|B|$ endlich jede Injektion
+automatisch auch eine Bijektion ist.
 
 \paragraph*{surjektive Abbildung}
-Die Mächtigkeit aller surjektiven Abbildungen lässt sich mithilfe der
+Seien |A| und |B| endlich. Die Mächtigkeit der Menge aller surjektiven
+Abbildungen von A nach B lässt sich mithilfe der
 Stirlingzahl 2. Art ($S_{n,r}$) berechnen.
 \begin{align*}
   A &\rightarrow B \\
