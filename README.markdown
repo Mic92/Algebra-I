@@ -6,9 +6,8 @@ Informationen über LaTeX bzw. zur Benutzung von Git findet ihr im Netz genug.
 
 Die fertige [PDF][github-pdf] gibt es auch hier.
 
-Kleine Änderung können auch über [Titanpad](http://titanpad.com/6SfxpFoNOZ) getätigt werden.
-Sagt aber bitte Bescheid falls ihr diese Seite benutzt, damit Änderungen in das 
-Dokument übernommen werden können. 
+Kleine Änderung könnt ihr auch per Mail oder Facebook senden. 
+Dies muss kein LaTeX sein. Es wird auch reiner Text oder anschauliche Bilder akzeptiert.
 
 Happy Hacking!
 
