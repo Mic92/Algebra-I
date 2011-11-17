@@ -1,27 +1,44 @@
-%*********************************************************
-% Änderung vom 09.11.11: Bisherige Definition entfernt und durch
-% Definition von Prof. Schmidt ersetzt. (js75)
-% chaosbastler: die Schreibweise mit Quantoren fand ich Übersichtlicher als Text ...
-% Außerdem war die alte Version mit der Fettsschreibung von ``surjektive Abbildung' usw. auch etwas übersichtlicher
+%*********************************************************%
+% 17.11 : Alte Definitionen wieder hergestellt. (chaosbastler)
 %*********************************************************
 \subsection{Typen von Abbildungen}\label{kap_typabb}
 \subsubsection{Definition}
+
+\begin{figure}
+\subfigure[surjektive
+Abbildung]{\includegraphics[width=3cm]{Surjection.pdf}}\hfill
+\subfigure[injektive
+Abbildung]{\includegraphics[width=3cm]{Injection.pdf}}\hfill
+\subfigure[bijektive
+Abbildungen]{\includegraphics[width=3cm]{Bijection.pdf}}\hfill
+\subfigure[identische
+Abbildungen]{\includegraphics[width=3cm]{Identitaet.pdf}}
+\end{figure}
+
+
+Seinen A und B zwei Mengen und $f:{A}\longrightarrow{B}$ eine Abbildungsvorschrift.
+Dann gibt es 3 besondere Typen von Abbildungen:
 \begin{description}
-\item Eine Abbildung $f \colon A \rightarrow B$ heiße \emph{injektiv} falls für
-$a, b \in X$ aus $x \neq t$ stets $fx \neq ft$ folgt (es gibt also keine Kollisionen).
-\item Es heiße $f$ \emph{surjektiv}, falls zu jedem $y \in B$ ein $x \in A$
-existiert mit $fx = y$ (es wird also jedes Element der Zielmenge abgedeckt).
-\item Ferner heiße $f$ \emph{bijektiv}, falls $f$ injektiv und surjektiv ist.
+\item[surjektive Abbildung] \emph{alle} Elemente von B mindestens einmal erfassen
+$$ \forall b \in B \exists a \in A : f(a)=b $$
+\item[injektive Abbildungen] alle Elemente von A erhalten \emph{unterschiedliche} Elemente aus B  (''keine Kollisionen``)
+$$ \forall a_1,a_2  \in A : f(a_1)=f(a_2) \Rightarrow a_1 = a_2 $$
+\item[bijektive Abbildungen] \emph{surjektiv und injektiv} zu gleich: alle A erhalten genau ein B und alle B werden getroffen.
+Dies impliziert die Umkehrbarkeit der Funktion. Eine Sonderform der bijektiven
+Abbildung ist die \emph{Identität}. Dabei wird jedes Element sich selbst zugeordnet.
+$$ \forall b \in B \exists ! a \in A : f(a) = b $$
 \end{description}
+
 Ist $f \colon A \rightarrow B$ eine Abbildung, so sei für $X \subseteq A$ stets
 $fX \coloneq f[X] \coloneq \{fx | x \in X\}$ die Menge der Bilder von $X$ unter
 $f$.
-
 Ferner heiße $\text{Bild}(f) = \text{Im}(f) \coloneq fA$ die
 \emph{Bildmenge}\footnote{Bild = Image} von $f$. $f$ ist genau dann surjektiv,
 wenn (gdw\footnote{im englischen Sprachraum \emph{iff} = if and only if}) $fA = B$
 gilt, das heißt die Bildmenge von $f$ ist gleich der Zielmenge von $f$. Daraus
 folgt: $fX \subseteq fA$
+
+\newpage
 
 \subsubsection{Bezeichnungen}
 \begin{description}
@@ -35,16 +52,6 @@ folgt: $fX \subseteq fA$
 (\emph{Bijektionen}) von $A$ nach $B$.
 \end{description}
 
-\begin{figure}
-\subfigure[surjektive
-Abbildung]{\includegraphics[width=3cm]{Surjection.pdf}}\hfill
-\subfigure[injektive
-Abbildung]{\includegraphics[width=3cm]{Injection.pdf}}\hfill
-\subfigure[bijektive
-Abbildungen]{\includegraphics[width=3cm]{Bijection.pdf}}\hfill
-\subfigure[identische
-Abbildungen]{\includegraphics[width=3cm]{Identitaet.pdf}}
-\end{figure}
 
 \subsubsection{Mächtigkeit von Definitions- und Wertebereich}
 

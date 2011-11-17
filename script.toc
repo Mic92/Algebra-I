@@ -19,6 +19,6 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Beispiel}{8}{subsubsection.2.2.1}
 \contentsline {subsection}{\numberline {2.3}Typen von Abbildungen}{9}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Definition}{9}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Bezeichnungen}{9}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2}Bezeichnungen}{10}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}M\IeC {\"a}chtigkeit von Definitions- und Wertebereich}{10}{subsubsection.2.3.3}
 \contentsline {subsection}{\numberline {2.4}M\IeC {\"a}chtigkeit von Mengen von Abbildung}{11}{subsection.2.4}
