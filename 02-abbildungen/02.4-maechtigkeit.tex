@@ -1,10 +1,11 @@
-\subsection{Mächtigkeit von Mengen von Abbildung}
+\subsection{Mächtigkeit von Mengen von Abbildungen}
 Seien $A$ und $B$ Mengen.
 Dann bezeichnet $B^A$ oder $\Map(A,B)$ die Menge aller Abbildungen von $A$
 nach $B$. \paragraph*{Satz:}
 Für $A, B$ endliche Mengen gilt:
 $$ |B^A| = {|B|}^{|A|} $$
 
+\subsubsection{Formeln zur Berechnung der Mächtigkeit von Mengen von Abbildungen}
 \paragraph*{bijektive Abbildungen}
 Sei $|A|=|B|$ endlich. Die Mächtigkeit der Menge aller bijektiven
 Abbildungen von A nach B entspricht der Anzahl der Permutationen auf
@@ -49,3 +50,8 @@ Sie wird(soweit wir bisher wissen) nicht als bekannt vorrausgesetzt.
 \subparagraph{Weitere Bemerkungen}
 Es gilt:
 $ |A| = n \Longleftrightarrow Bij( \{1, ... , n\},A) \neq \emptyset$
+
+\subsubsection{Herleitung einer rekursiven Formel für |Surj(A,B)| }
+Idee: $$ B^A =  \underset {{X}\subseteq{B}} {\mathbin{\dot{\cup}}} {\{ f\in B^A | f(A) = X \}} $$
+
+Offensichtlich\footnote{Das ist hier wohl eher ironisch gemeint} gilt: $$ | {f \in B^A | f(A) = X} | = |Surj(A,X)| = s(|A|, |X|) $$
