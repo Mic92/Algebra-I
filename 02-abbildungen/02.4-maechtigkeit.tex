@@ -11,7 +11,7 @@ Abbildungen von A nach B entspricht der Anzahl der Permutationen auf
 einer |A|-elementigen Menge.
 \begin{align*}
   A &\rightarrow B \\
-  (|A|)! &= (|B|)!
+  |Bij(A,B)| = (|A|)! &= (|B|)!
 \end{align*}
 
 \paragraph*{injektive Abbildungen}
@@ -20,12 +20,16 @@ Abbildungen von A nach B entspricht einer \emph{Variation} ohne Zurücklegen:
 \begin{align*}
   A &\rightarrow B \\
   a &= |A| \; b = |B| \\
-  {{b}\choose{a}} * a!
+  |Inj(A,B)| =  
+{{b}\choose{a}} * a!
   &= \frac{b!}{(b-a)!}
 \end{align*}
 
 \subparagraph*{Anmerkung:} Für den Sonderfall $|A|=|B|$ führt die Formel auf die Formel für die bijektiven Abbildungen zurück. Das bedeutet, dass im Fall $|A|=|B|$ endlich jede Injektion
-automatisch auch eine Bijektion ist.
+automatisch auch eine Bijektion ist:
+$$|A|=|B| \Longleftrightarrow Inj(A,B) = Bij(A,B) = Surj(A,B)$$
+z.B.: $ Inj(A,A) = Bij(A,A) =: Perm(A) $
+(die Permutation einer Menge ist die Bijektion einer Menge in sich selbst)
 
 \paragraph*{surjektive Abbildung}
 Seien |A| und |B| endlich. Die Mächtigkeit der Menge aller surjektiven
@@ -34,9 +38,14 @@ Stirlingzahl 2. Art ($S_{n,r}$) berechnen.
 \begin{align*}
   A &\rightarrow B \\
   a &= |A| \; b = |B| \\
+  |Surj(A,B)| = 
   b!    &\cdot S_{(a,b)}\\
   S(a,b)&=\frac{1}{b!}\sum_{j=1}^{b}(-1)^{b-j}{b \choose j}j^a
 \end{align*}
 
 \subparagraph*{Bemerkung:} Die Formel für surjektive Abbildung sollte als Ergänzung zum Vorlesungsstoff verstanden werden. 
 Sie wird(soweit wir bisher wissen) nicht als bekannt vorrausgesetzt.
+
+\subparagraph{Weitere Bemerkungen}
+Es gilt:
+$ |A| = n \Longleftrightarrow Bij( \{1, ... , n\},A) \neq \emptyset$

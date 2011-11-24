@@ -25,3 +25,4 @@
 \contentsline {subsubsection}{\numberline {2.3.2}Bezeichnungen}{11}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}M\IeC {\"a}chtigkeit von Definitions- und Wertebereich}{11}{subsubsection.2.3.3}
 \contentsline {subsection}{\numberline {2.4}M\IeC {\"a}chtigkeit von Mengen von Abbildung}{12}{subsection.2.4}
+\contentsline {subparagraph}{Weitere Bemerkungen}{13}{section*.23}
