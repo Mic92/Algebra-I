@@ -28,3 +28,5 @@
 \contentsline {subsubsection}{\numberline {2.4.1}Formeln zur Berechnung der M\IeC {\"a}chtigkeit von Mengen von Abbildungen}{12}{subsubsection.2.4.1}
 \contentsline {subparagraph}{Weitere Bemerkungen}{13}{section*.23}
 \contentsline {subsubsection}{\numberline {2.4.2}Herleitung einer rekursiven Formel f\IeC {\"u}r |Surj(A,B)| }{13}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Anwendung der rekursiven Formel}{14}{subsubsection.2.4.3}
+\contentsline {paragraph}{Bitte um Mithilfe:}{14}{section*.24}
