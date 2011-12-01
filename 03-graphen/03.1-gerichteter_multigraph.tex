@@ -21,6 +21,7 @@ Dadurch soll verdeutlicht werden, dass man die Kante nur in eine Richtung(nämli
 
 Bei einem Multigraphen ist es - im Gegensatz zu einem einfachem Graphen - erlaubt, zwei Knoten auch durch mehrere Kanten zu verbinden.
 Auch sogenannte Schlingen(eine Kante von einem Knoten auch sich selbst) sind erlaubt.
+Eine nähere Erläuterung von $\sigma$ und $\tau$ findet anhand des Beispiels b) statt.
 
 \subsubsection{Beispiel}
 \subsubsection*{a)}
@@ -36,6 +37,17 @@ Auch sogenannte Schlingen(eine Kante von einem Knoten auch sich selbst) sind erl
 Sei V Menge und $E \subseteq V \times V $ ``binäre Relation auf V''
 \\Dann ist $G(V,E) := (V,E, \sigma, \tau) $
 \\mit $\sigma : E \rightarrow V, (p,q) \mapsto p$
-\\und $\tau : E \rightarrow V, q \mapsto (p,q)$
+\\und $\tau : E \rightarrow V, (p,q) \mapsto q$
+\\Sei V nun z.B. die Menge $\{1,2,3\}$. Die Elemente 1,2,3 bezeichnen dabei jeweils die Knoten.
+Dann ist z.B. $E = \{(1,1), (1,2), (1,3)\}$ die Menge aller Kanten des Graphen. Das heißt, es geht vom Element 1 ein Pfeil zu allen anderen Elementen und zu sich selbst.
+\\\\Die Funktion $\sigma$ gibt nun zu einer Kante den Anfangspunkt als Funktionswert zurück, also bei einer Kante $(a,b)$ das Element a):
+\\$\sigma((1,1)) = 1$ 
+\\$\sigma((1,2)) = 1$ 
+\\$\sigma((1,3)) = 1$ 
+\\Die Funktion $\tau$ hingegen gibt jeweils den Endpunkt einer Kante zurück, also bei einer Kante $(a,b)$ das Element b):
+\\$\tau((1,1)) = 1$ 
+\\$\tau((1,2)) = 2$ 
+\\$\tau((1,3)) = 3$ 
 
+% Grafik wird noch eingefügt, Beispiel vielleicht noch mal besser strukturiert
 
