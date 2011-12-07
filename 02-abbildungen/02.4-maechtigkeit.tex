@@ -21,7 +21,7 @@ Abbildungen von A nach B entspricht einer \emph{Variation} ohne Zurücklegen:
 \begin{align*}
   A &\rightarrow B \\
   a &= |A| \; b = |B| \\
-  |Inj(A,B)| =  
+  |Inj(A,B)| =
 {{b}\choose{a}} * a!
   &= \frac{b!}{(b-a)!}
 \end{align*}
@@ -39,12 +39,12 @@ Stirlingzahl 2. Art ($S_{n,r}$) berechnen.
 \begin{align*}
   A &\rightarrow B \\
   a &= |A| \; b = |B| \\
-  |Surj(A,B)| = 
+  |Surj(A,B)| =
   b!    &\cdot S_{(a,b)}\\
   S(a,b)&=\frac{1}{b!}\sum_{j=1}^{b}(-1)^{b-j}{b \choose j}j^a
 \end{align*}
 
-\subparagraph*{Bemerkung:} Die Formel für surjektive Abbildung sollte als Ergänzung zum Vorlesungsstoff verstanden werden. 
+\subparagraph*{Bemerkung:} Die Formel für surjektive Abbildung sollte als Ergänzung zum Vorlesungsstoff verstanden werden.
 Sie wird(soweit wir bisher wissen) nicht als bekannt vorrausgesetzt.
 
 \subparagraph{Weitere Bemerkungen}
@@ -57,13 +57,13 @@ Idee: $$ B^A =  \underset {{X}\subseteq{B}} {\mathbin{\dot{\cup}}} {\{ f\in B^A 
 Offensichtlich gilt: $$ | {f \in B^A | f(A) = X} | = |Surj(A,X)| = s(|A|, |X|) $$
 Da $ \{ \{f \in B^A | f(A) = \lambda \} X \subseteq B \} $ eine Partition(d.h. ``disjunkte Zerlegung``) von $B^A$ ist, gilt nun:
 
-$$ {|B|}^{|A|} = |{B}^{A}| = \sum_{x \subseteq B} s(|A|,|X|) 
-= \sum_{i = 0}^{|B|} \sum_{X \in  {{|B|}\choose{i}} } s(|A|,i) = 
+$$ {|B|}^{|A|} = |{B}^{A}| = \sum_{x \subseteq B} s(|A|,|X|)
+= \sum_{i = 0}^{|B|} \sum_{X \in  {{|B|}\choose{i}} } s(|A|,i) =
 \sum_{i = 0}^{|B|}   {{|B|}\choose{i}} *  s(|A|,i)
 $$
 
-Es folgt mit $n:=|A|$ sowie $k:=|B|$ : 
-$$ \sum_{i = 0}^{k}   {{k}\choose{i}} *  s(n,i)  = 
+Es folgt mit $n:=|A|$ sowie $k:=|B|$ :
+$$ \sum_{i = 0}^{k}   {{k}\choose{i}} *  s(n,i)  =
 {{k}\choose{0}} * s(n,0) + {{k}\choose{1}} * s(n,1) + {{k}\choose{2}} * s(n,2) + \dots + {{k}\choose{k}} * s(n,k) = k^n $$
 
 Weiterhin gilt: $ s(0,0) = 1 $ und $s(n,1)=1$ sowie $ s(n,0)=0 $ für $ {n}\neq{0} $
@@ -85,6 +85,3 @@ $$ s(n,3) = 3^n - {{3}\choose{1}} * 1 - {{3}\choose{2}} * (2^n -2) = 3^n - 3 * 2
 
 So ergibt sich z.B. für n = 5:
 $$ s(5,3) = 3^5 - 3 * 2^5 + 3 = 150 $$
-
-\paragraph{Bitte um Mithilfe:} Der Beweis ist relativ lang und es hat sich bestimmt noch der ein oder andere Tippfehler versteckt, vielleicht habe ich auch 
-das eine oder andere verkehrt von der Tafel abgeschrieben. Wenn ihr also Fehler findet, nicht wundern, sondern melden ;-) 
