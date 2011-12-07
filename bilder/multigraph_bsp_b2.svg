@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="6cm" height="3cm" viewBox="-784 -710 111 51" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #000000" cx="-730" cy="-670" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-730" cy="-670" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-730" cy="-670" rx="10" ry="10"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="-772.07" cy="-670.088" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-772.07" cy="-670.088" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-772.07" cy="-670.088" rx="10" ry="10"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="-683.656" cy="-670.088" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-683.656" cy="-670.088" rx="10" ry="10"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-683.656" cy="-670.088" rx="10" ry="10"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -718.997 -670 C -689.117,-670 -724.54,-670.088 -704.396,-670.088"/>
+    <polygon style="fill: #000000" points="-696.896,-670.088 -706.896,-665.088 -704.396,-670.088 -706.896,-675.088 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-696.896,-670.088 -706.896,-665.088 -704.396,-670.088 -706.896,-675.088 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -741.001 -670 C -764.241,-670 -738.83,-670.088 -752.334,-670.088"/>
+    <polygon style="fill: #000000" points="-759.834,-670.088 -749.834,-675.088 -752.334,-670.088 -749.834,-665.088 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-759.834,-670.088 -749.834,-675.088 -752.334,-670.088 -749.834,-665.088 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -722.004 -677.521 C -677.018,-719.836 -772.899,-716.015 -744.451,-686.07"/>
+    <polygon style="fill: #000000" points="-739.285,-680.632 -749.798,-684.438 -744.451,-686.07 -742.548,-691.326 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-739.285,-680.632 -749.798,-684.438 -744.451,-686.07 -742.548,-691.326 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="-734.449" y="-686.123">
+    <tspan x="-734.449" y="-686.123">1</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="-774.749" y="-686.412">
+    <tspan x="-774.749" y="-686.412">2</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="-687.789" y="-689.187">
+    <tspan x="-687.789" y="-689.187">3</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="-635.058" y="-787.249">
+    <tspan x="-635.058" y="-787.249"></tspan>
+  </text>
+</svg>

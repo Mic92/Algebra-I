@@ -5,22 +5,22 @@ Wie jedes Modell dienen sie dazu, die Realität zu simplifizieren und auf das We
 Bei einem Netzwerk wäre eine geeignete Abstraktion, dass man sich auf die Betrachtung von Objekten(die als Knoten bezeichnet werden) und ihrer Verbindungen beschränkt.
 Die Position der Knoten ist nicht relevant.
 
-
 \subsubsection{Definition}
-Ein \emph{gerichteter Multigraph}(auch: Netzwerk) $G:= (V,E,\sigma,\tau) $ besteht aus einer \emph{Knotenmenge} $V$, einer \emph{Kantenmenge} $E$ sowie
-$\sigma , \tau , \in V^E $.
-\\ $\sigma $ wird als source map(Anfangspunkt) von G bezeichnet.
-\\ $\tau $ wird als target map(Endpunkt) von G bezeichnet.
-\\ $\rho : E \rightarrow V \times V, e \mapsto (\sigma e, \tau e) $
-\\
-\\G heiße einfach, falls g injektiv ist.
+Ein \emph{gerichteter Multigraph} (auch: Netzwerk) $G:= (V,E,\sigma,\tau) $ besteht aus einer \emph{Knotenmenge} $V$, einer \emph{Kantenmenge} $E$ sowie
+$\sigma , \tau \in V^E $.
+\begin{itemize}
+\item $\sigma $ wird als Anfangspunkt (source map) von G bezeichnet.
+\item $\tau $ wird als Endpunkt (target map) von G bezeichnet.
+\item entspricht der Abbildung: $\rho : E \rightarrow V \times V, e \mapsto (\sigma e, \tau e) $
+\end{itemize}
+G heiße einfach, falls g injektiv ist.
 
 \subsubsection{Erläuterungen zur Definition}
 Im Gegensatz zu ungerichteten Graphen, werden bei der graphischen Darstellung eines Graphen Kanten durch Pfeile(und nicht durch Linien) dargestellt.
 Dadurch soll verdeutlicht werden, dass man die Kante nur in eine Richtung(nämlich die Pfeilrichtung) ``durchlaufen'' kann.
 
 Bei einem Multigraphen ist es - im Gegensatz zu einem einfachem Graphen - erlaubt, zwei Knoten auch durch mehrere Kanten zu verbinden.
-Auch sogenannte Schlingen(eine Kante von einem Knoten auch sich selbst) sind erlaubt.
+Auch sogenannte Schleifen (eine Kante von einem Knoten auch sich selbst) sind erlaubt.
 Eine nähere Erläuterung von $\sigma$ und $\tau$ findet anhand des Beispiels b) statt.
 
 \subsubsection{Beispiel}
@@ -39,9 +39,32 @@ Sei V Menge und $E \subseteq V \times V $ ``binäre Relation auf V''
 \\mit $\sigma : E \rightarrow V, (p,q) \mapsto p$
 \\und $\tau : E \rightarrow V, (p,q) \mapsto q$
 
-Sei V nun z.B. die Menge (1,2,3). Die Elemente 1,2,3 bezeichnen dabei jeweils die Knoten.
-Dann ist $E = {(1,1), (1,2), (1,3), (2,1), (2,2), (2,3), (3,1), (3,2), (3,3) }$ die Menge aller Kanten des Graphen.
-Die Funktion $sigma$ gibt nun zu einer Kante den Anfangspunkt als Funktionswert zurück, also:
-$\sigma( (1,2) $ = 
+Sei V nun z.B. die Menge $\{1,2,3\}$. Die Elemente 1,2,3 bezeichnen dabei jeweils die Knoten.
+Dann ist z.B. $E = \{(1,1), (1,2), (1,3)\}$ die Menge aller Kanten des Graphen. Das heißt, es geht vom Element 1 ein Pfeil zu allen anderen Elementen und zu sich selbst.
 
+Die Funktion $\sigma$ gibt nun zu einer Kante den Anfangspunkt als
+Funktionswert zurück, also bei einer Kante $(a,b)$ das Element a):
+\begin{align*}
+\sigma((1,1)) = 1\\
+\sigma((1,2)) = 1\\
+\sigma((1,3)) = 1\\
+\end{align*}
+Die Funktion $\tau$ hingegen gibt jeweils den Endpunkt einer Kante
+zurück, also bei einer Kante $(a,b)$ das Element b):
+\begin{align*}
+\tau((1,1)) = 1\\
+\tau((1,2)) = 2\\
+\tau((1,3)) = 3\\
+\end{align*}
 
+\begin{center}
+ \includegraphics{./bilder/multigraph_bsp_b1.pdf}
+ % multigraph_bsp_b1.pdf: 312x283 pixel, 72dpi, 11.01x9.98 cm, bb=0 0 312 283
+\end{center}
+
+% Grafik wird noch eingefügt, Beispiel vielleicht noch mal besser strukturiert
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../script"
+%%% End:
