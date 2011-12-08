@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="6cm" height="3cm" viewBox="183 96 118 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #000000" cx="189.5" cy="133.5" rx="5.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="189.5" cy="133.5" rx="5.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="189.5" cy="133.5" rx="5.5" ry="5.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="294" cy="112.6" rx="5.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="294" cy="112.6" rx="5.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="294" cy="112.6" rx="5.5" ry="5.5"/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="185.25" y="153.25">
+    <tspan x="185.25" y="153.25">p</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="290.75" y="131.75">
+    <tspan x="290.75" y="131.75">q</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 195.978 133.5 C 230.672,133.5 252.801,108.628 277.86,111.044"/>
+    <polygon style="fill: #000000" points="285.326,111.764 274.892,115.781 277.86,111.044 275.852,105.827 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="285.326,111.764 274.892,115.781 277.86,111.044 275.852,105.827 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="222.25" y="108.75">
+    <tspan x="222.25" y="108.75">pRq</tspan>
+  </text>
+</svg>

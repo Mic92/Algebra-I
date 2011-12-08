@@ -36,6 +36,9 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Erl\IeC {\"a}uterungen zur Definition}{15}{subsubsection.3.1.3}
 \contentsline {subsubsection}{\numberline {3.1.4}Beispiel}{16}{subsubsection.3.1.4}
 \contentsline {paragraph}{b)}{16}{section*.25}
-\contentsline {subsection}{\numberline {3.2}Moprhismen zum Vergleich von Graphen}{18}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Bin\IeC {\"a}re Relate als Netzwerke}{18}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Definition}{18}{subsubsection.3.2.1}
-\contentsline {paragraph}{Merkregel}{18}{section*.26}
+\contentsline {paragraph}{Bemerkung}{18}{section*.26}
+\contentsline {subsection}{\numberline {3.3}Moprhismen zum Vergleich von Graphen}{19}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Definition}{19}{subsubsection.3.3.1}
+\contentsline {paragraph}{Merkregel}{19}{section*.27}
