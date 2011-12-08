@@ -42,3 +42,4 @@
 \contentsline {subsection}{\numberline {3.3}Moprhismen zum Vergleich von Graphen}{19}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}Definition}{19}{subsubsection.3.3.1}
 \contentsline {paragraph}{Merkregel}{19}{section*.27}
+\contentsline {subsubsection}{\numberline {3.3.2}Beispiel}{19}{subsubsection.3.3.2}
