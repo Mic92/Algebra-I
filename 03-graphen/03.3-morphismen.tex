@@ -1,0 +1,21 @@
+\subsection{Moprhismen zum Vergleich von Graphen}
+\subsubsection{Definition}
+Seien G und G' zwei Netzwerke(Graphen) sowie $G \overset{\Phi}{\rightarrow} G'$ 
+\\Dann ist $\Phi  = (\Phi_{kante}, \Phi_{ecke})$  ein \emph{Morphismus} ein Paar von Abbildungen:
+$$ \Phi_{vert}: V \rightarrow V'$$
+$$\Phi_{edge}: E \rightarrow E'$$
+mit $\tau' \Phi_{edge} e = \Phi_{vert} \tau e$
+\\und $ {\sigma '}  \Phi_{edge} e = \Phi_{vert} \sigma e$
+% Anmerkung: An der Tafel Stand nicht E -> E' sondern E->V'; im einer Zusammenfassung von Algebra im ET Forum stand diese Version. Was ist richtig?
+\\D.h. das Bild des Anfangsknoten einer Kante e ist Anfangsknoten der Bildkante.
+\paragraph{Merkregel}``Fuß und Kopf gehen nicht verloren''
+
+\subsubsection{Beispiel}
+\begin{figure}[h!]
+ \subfigure[Netzwerk G]{  \includegraphics[width=7cm]{../bilder/morphismus_bsp_a1.pdf} } \hfill
+ % morphismus_bsp_a1.pdf: 652x369 pixel, 72dpi, 23.00x13.02 cm, bb=0 0 652 369
+ \subfigure[Netzwerk G']{  \includegraphics[width=5cm]{../bilder/morphismus_bsp_a2.pdf} }
+ % morphismus_bsp_a2.pdf: 340x425 pixel, 72dpi, 11.99x14.99 cm, bb=0 0 340 425
+\end{figure}
+G und G' sind isomorph, man schreibt $G \cong G'$
+%Bin mir nicht sicher ob das Beispiel nicht eventuell sogar noch weiter gehen könnte, so dass auch die einzelnen Elemente von G' z.B. anders heißen
