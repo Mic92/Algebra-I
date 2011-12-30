@@ -44,3 +44,13 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Definition}{19}{subsubsection.3.3.1}
 \contentsline {paragraph}{Merkregel}{19}{section*.28}
 \contentsline {subsubsection}{\numberline {3.3.2}Beispiel}{19}{subsubsection.3.3.2}
+\contentsline {section}{\numberline {4}Teilbarkeit}{19}{section.4}
+\contentsline {paragraph}{Bezeichnung:}{20}{section*.29}
+\contentsline {paragraph}{Beispiel:}{20}{section*.30}
+\contentsline {paragraph}{Bemerkung:}{20}{section*.31}
+\contentsline {paragraph}{Eigenschaften von Relationen:}{20}{section*.32}
+\contentsline {paragraph}{Konvention:}{21}{section*.33}
+\contentsline {paragraph}{Achtung:}{21}{section*.34}
+\contentsline {paragraph}{Beispiel:}{21}{section*.35}
+\contentsline {paragraph}{Beispiel:}{21}{section*.36}
+\contentsline {paragraph}{Hassediagramm zu $\mathbb {T}_n$:}{21}{section*.37}
