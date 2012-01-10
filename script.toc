@@ -52,5 +52,5 @@
 \contentsline {paragraph}{Konvention:}{21}{section*.33}
 \contentsline {paragraph}{Achtung:}{21}{section*.34}
 \contentsline {paragraph}{Beispiel:}{21}{section*.35}
-\contentsline {paragraph}{Beispiel:}{21}{section*.36}
-\contentsline {paragraph}{Hassediagramm zu $\mathbb {T}_n$:}{21}{section*.37}
+\contentsline {paragraph}{Beispiel:}{22}{section*.36}
+\contentsline {paragraph}{Hassediagramm zu $\mathbb {T}_n$:}{22}{section*.37}

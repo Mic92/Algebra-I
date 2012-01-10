@@ -1,6 +1,6 @@
 % --Teilbarkeit--
 
-Seien $a, b \in \mathbb{N}$. Dann ist $a$ \emph{Teiler von} $b$ genau dann wenn,
+Seien $a, b \in \mathbb{N}$. Dann ist $a$ \emph{Teiler von} $b$ genau dann, wenn
 es ein $m \in \mathbb{N}$ gibt, so dass gilt: $a \cdot m = b$.
 
 \paragraph{Bezeichnung:} $a \mid b$, $a \le_\tau b$
@@ -10,31 +10,35 @@ es ein $m \in \mathbb{N}$ gibt, so dass gilt: $a \cdot m = b$.
 3 \mid 6,                    & \text{ denn }     3 \cdot 2 = 6    \\
 n \mid 0,                    & \text{ für alle } n \in \mathbb{N} \\
 n \le_\tau 0,                 & \text{ für alle } n \in \mathbb{N} \\
-0 \mid 0, \text{ } 0 \nmid k & \text{ für alle } k \in \mathbb{N} \setminus \{0\} \\
-                             & \text{ (es gibt }  m \in \mathbb{N}: 0 \cdot m = 0 \text{)} \\
+0 \mid 0, \text{ } 0 \nmid k & \text{ für alle } k \in \mathbb{N} \setminus \{0\} \text{ (es gibt }  m \in \mathbb{N}: 0 \cdot m = 0 \text{)} \\
 1 \mid n,                    & \text{ für alle } n \in \mathbb{N} \\
 \end{align*}
 
 \paragraph{Bemerkung:}
 $\le_\tau$ ist eine Relation über $\mathbb{N}$:
 
-$\le_\tau \subseteq \mathbb{N} \times \mathbb{N}$.
+$\le_\tau $ ist eine Untermenge von $\mathbb{N} \times \mathbb{N}$.
 
-$(a,b) \in \le_\tau$ gilt genau dann, wenn $a \le_\tau b$.
+$(a,b) $ ist ein Element von $\le_\tau$, wenn gilt $a \le_\tau b$.
 
 \paragraph{Eigenschaften von Relationen:}
 
-Sei $R \subseteq A \times A$ eine Relation. Dann heißt $R$:
+Wenn $R \subseteq A \times A$ eine Relation ist, dann ist $R$:
 \begin{itemize}
-\item \emph{symmetrisch} fall
-  s für $(a, b) \in \mathbb{R}$ stets auch gilt: $(b, a) \in \mathbb{R}$
- \item \emph{antisymmetrisch} falls für $(a, b) \in \mathbb{R}$ und $(b, a) \in \mathbb{R}$  stets folt: $a = b$
- \item \emph{reflexiv} falls $(a, a) \in \mathbb{R}$ gilt für alle: $a \in A$
- \item \emph{transitiv} falls aus $(a, b) \in \mathbb{R}$ und $(b, c) \in \mathbb{R}$ folgt: $(a, c) \in \mathbb{R}$
+\item \emph{symmetrisch}, falls für $(a, b) \in \mathbb{R}$ stets auch
+  $(b, a) \in \mathbb{R}$ gilt, z.B. Rechwinkligkeit: wenn $a \bot b$ ist,
+  dann ist $b \bot a$.
+ \item \emph{antisymmetrisch} falls für $(a, b) \in \mathbb{R}$ und $(b, a) \in \mathbb{R}$  stets folgt: $a \equiv b$
+ \item \emph{reflexiv} falls $(a, a) \in \mathbb{R}$ für alle $a$ in
+   $A$ gilt, z.B. Parallelität: Jede Gerade ist zu sich selbst parallel
+ \item \emph{transitiv} falls aus $(a, b) \in \mathbb{R}$ und $(b, c)
+   \in \mathbb{R}$ folgt: $(a, c) \in \mathbb{R}$, z.B. Kleiner-Gleich
+   ``$\leq$'': Wenn $a \leq b$ und $b \leq c$, dann gilt $a \leq c$.
 \end{itemize}
 
 \noindent Eine Ordnung(-srelation) ist eine Relation, die antisymmetrisch,
-transitiv und reflexiv ist. \\ \indent {\bf Beispiel:} $\le_\tau, \le$ \\
+transitiv und reflexiv ist. \\ \indent {\bf Beispiel:} $\le_\tau$
+(Teiler von), $\le$ (kleiner gleich) \\
 
 \noindent Eine Äquivalenz(-relation) ist eine Relation, die symmetrisch,
 transitiv und reflexiv ist. \\ \indent {\bf Beispiel:} $=, \equiv$ (mod $n$) \\
@@ -43,16 +47,25 @@ transitiv und reflexiv ist. \\ \indent {\bf Beispiel:} $=, \equiv$ (mod $n$) \\
 
 \noindent Wir schränken $\le_\tau$ ein auf $T_n$: $\le_\tau \cap (T_n \times T_n) = \le_\tau^n$
 
-\paragraph{Konvention:} wir schreiben $\le_\tau$ statt $\le_\tau$ statt $\le_\tau \cap (A \times A)$, wenn klar ist, worauf sich $\le_\tau$ bezieht, also was $A$ ist. \\
+\paragraph{Konvention:} wir schreiben $\le_\tau$ statt $\le_\tau \cap (A \times A)$, wenn klar ist, worauf sich $\le_\tau$ bezieht, also was $A$ ist. \\
 
 \noindent $\mathbb{T}_n := (T_n, \le_\tau)$ heißt {\bf Teilerverband} von $n$.
 
-\paragraph{Achtung:} $\mathbb{T}_n$ ist ein binäres Relat. Wir haben bereits definiert, was $G (\mathbb{T}_n) = G (T_n, \le_\tau)$ ist:
-\indent $G (\mathbb{T}_n) = (T_n, \le_\tau, \sigma, \tau)$ mit $\sigma (a, b) = a, \tau (a, b) = b, \forall (a, b) \in \le_\tau$ \\
+\paragraph{Achtung:} $\mathbb{T}_n$ ist ein binäres Relat. Wir haben
+bereits definiert, was $G (\mathbb{T}_n) = G (T_n, \le_\tau)$ ist:
+$G (\mathbb{T}_n) = (T_n, \le_\tau, \sigma, \tau) \text{ mit:}$
+\begin{align*}
+\sigma (a, b) = a\\
+\tau (a, b) = b\\
+\forall (a, b) \in \le_\tau
+\end{align*}
 
-\paragraph{Beispiel:} $\mathbb{T}_6 = (T_6, \le_\tau), T_6 = { 1, 2, 3, 6 }$
+\paragraph{Beispiel:} $\mathbb{T}_6 = (T_6, \le_\tau), T_6 = { 1, 2, 3, 6}$
 
-$G (\mathbb{T}_6) = $ --- Graph einfügen --- \\
+Teilerverband $G (\mathbb{T}_6) $:
+\begin{figure}[h]
+  \includegraphics[scale=0.5,keepaspectratio=true]{../bilder/teilerverband.pdf}
+\end{figure}
 
 \noindent Ist $R$ eine Ordnung über $A$, dann ist $G (A, R)$ eine ungünstige Darstellung. \\ {\bf Besser:} Hasse-Diagramm:
 
@@ -61,15 +74,23 @@ $ \le_\tau = \{ (a, b) \in \le_\tau | \text{ für alle } c \in \mathbb{N} \text{
 
 \paragraph{Beispiel:}
 \begin{itemize}
- \item $(1, 6) \in \le_\tau$ aber $1 \le_\tau 2 \le_\tau 6, 1 \le_\tau 3 \le_\tau 6$ also ist $(1, 6) \not\in\le_\tau$.
- \item $(2, 6) \in \le_\tau$ und für alle $c \in T_6$ mit $2 \le_\tau c \le_\tau 6, (2, 2), (2, 6), (6, 6)$ gilt $c = 2$ oder $c = 6 \rightarrow (2, 6)$
+\item $(1, 6) \in \le_\tau$, aber $1 \le_\tau 2 \le_\tau 6$ und
+                                 $1 \le_\tau 3 \le_\tau 6$,
+  daraus folgt $(1, 6) \not\in\le_\tau$.
+ \item $(2, 6) \in \le_\tau$ und für alle $c \in T_6$ mit $2 \le_\tau c \le_\tau 6$ gilt $c = 2$ oder $c = 6 \rightarrow (2, 6)$
 \end{itemize}
 
 \paragraph{Hassediagramm zu $\mathbb{T}_n$:}
 
-Zeichne $G (T_n, \le_\tau)$, aber so, dass der Knoten b über dem Knoten $a$ liegt, falls $(a, b) \in \le_\tau$ und zeichne Kanten $(a, b)$, also $a$ ----- $b$ statt $a \longrightarrow b$. \\
+Zeichne $G (T_n, \le_\tau)$, so dass der Knoten b über dem Knoten $a$
+liegt, falls $(a, b) \in \le_\tau$ und zeichne Kanten $(a, b)$, also
+$a$ ----- $b$ statt $a \longrightarrow b$. \\
 
---- Graph einfügen ---
+\begin{figure}[h]
+  \includegraphics[scale=0.5,keepaspectratio=true]{../bilder/hassediagramm_von_6.pdf}
+  \includegraphics[keepaspectratio=true]{../bilder/hassediagramm_von_60.pdf}
+  \caption{Hassediagramm vom Teilerverband 6 und 60}
+\end{figure}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "script"
