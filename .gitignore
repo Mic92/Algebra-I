@@ -2,6 +2,7 @@
 *.aux
 *.log
 *.out
+*.toc
 # Auctex spezifisches Verzeichnis
 auto/**
 *.synctex.gz
