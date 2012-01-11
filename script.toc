@@ -55,4 +55,6 @@
 \contentsline {paragraph}{Beispiel:}{23}{section*.36}
 \contentsline {paragraph}{Hassediagramm zu $\mathbb {T}_n$:}{23}{section*.37}
 \contentsline {section}{\numberline {5}Multimengen}{24}{section.5}
-\contentsline {paragraph}{Mengenoperationen:}{24}{section*.38}
+\contentsline {paragraph}{Vergleichbarkeit:}{24}{section*.38}
+\contentsline {paragraph}{Notation:}{24}{section*.39}
+\contentsline {paragraph}{Mengenoperationen:}{24}{section*.40}
