@@ -2,12 +2,25 @@
 \documentclass[a4paper,12pt, DIV12]{scrartcl}
 % Trennungen, Schriftsatz; neue Deutsche Rechtschreibung
 \usepackage[ngerman]{babel}
-\usepackage[T1]{fontenc} % Umlaute, Sonderzeichen...
-% Für Betriebssysteme mit utf8-Codierung
-%\usepackage{ucs}
-\usepackage[utf8x]{inputenc}
-% ansonsten(z.B. Windows):
-% \usepackage[ansinew]{inputenc}
+\usepackage{lmodern} % Modernere Version der Standard-Schriftart
+
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8x]{inputenc}
+  \usepackage[T1]{fontenc} % Umlaute, Sonderzeichen...
+\else
+  \ifLuaTeX
+  % LuaLatex ist die Weiterentwicklung von pdflatex
+  % Vorteile:
+  % - kann natives utf-8
+  % - Macros sind auch in der schönen Sprache Lua scriptbar
+  % - Unterstützung vom auf dem Betriebssystem installierten Fonts
+  % braucht auf meinem Computer mehr CPU.
+  % zum Ausprobieren ganz witzig.
+    \usepackage{luatextra}
+    \usepackage{fontspec}
+  \fi
+\fi
 %-----------------------------------------------------------------------------------------
 
 %------------------Packete----------------------------------------------------------------
