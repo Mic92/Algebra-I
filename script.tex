@@ -25,7 +25,8 @@
 
 %------------------Packete----------------------------------------------------------------
 % Paket um Grafiken einzubinden. Evtl. muss unter Windows
-% mit \usepackage[dvips]{graphicx} der dvips-Treiber für EPS-Grafiken geladen werden
+% mit \usepackage[dvips]{graphicx} der dvips-Treiber für EPS-Grafiken
+% geladen werden
 \usepackage{graphicx}
 \usepackage{subfigure}  % Bilder platzieren(z.B. nebeneinander)
 \usepackage{multicol} % Paket für mehrspaltige Dokumente
@@ -35,10 +36,10 @@
 \usepackage{mathabx}  % für vernünftiges :=
 \usepackage{color}    % Farbdefinitionen
 \usepackage{hyperref} % fuer klickbare Links
-\usepackage{listings} % Quellcode farbig darstellen
 \usepackage{lastpage} % Spezielles Paket um die Seiten zu zählen
 \usepackage{scrpage2} % Kopf- und Fusszeilen
 \usepackage{enumerate} % Aufzählungen
+%\usepackage{listings} % Quellcode farbig darstellen
 %\usepackage{pst-circ} % Elektronische Schaltungen
 %\usepackage{pgfplots} % Für Diagramme
 
@@ -95,7 +96,6 @@
 \input{titelpage}
 \newpage
 \tableofcontents
-
 \newpage
 \section{Mengen}
 \input{01-mengen/01.1-grundlegendes.tex}
@@ -131,5 +131,6 @@
 \end{document}
 
 %%% Local Variables:
-%%% TeX-master: "master"
+%%% mode: latex
+%%% TeX-master: t
 %%% End:
