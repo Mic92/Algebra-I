@@ -1,4 +1,21 @@
-% --Teilbarkeit--
+% --Relationen--
+
+\subsection{Eigenschaften}
+
+Wenn $R \subseteq A \times A$ eine Relation ist, dann ist $R$:
+\begin{itemize}
+\item \emph{symmetrisch}, falls für $(a, b) \in \mathbb{R}$ stets auch
+  $(b, a) \in \mathbb{R}$ gilt, z.B. Rechwinkligkeit: wenn $a \bot b$ ist,
+  dann ist $b \bot a$.
+ \item \emph{antisymmetrisch} falls für $(a, b) \in \mathbb{R}$ und $(b, a) \in \mathbb{R}$  stets folgt: $a \equiv b$
+ \item \emph{reflexiv} falls $(a, a) \in \mathbb{R}$ für alle $a$ in
+   $A$ gilt, z.B. Parallelität: Jede Gerade ist zu sich selbst parallel
+ \item \emph{transitiv} falls aus $(a, b) \in \mathbb{R}$ und $(b, c)
+   \in \mathbb{R}$ folgt: $(a, c) \in \mathbb{R}$, z.B. Kleiner-Gleich
+   ``$\leq$'': Wenn $a \leq b$ und $b \leq c$, dann gilt $a \leq c$.
+\end{itemize}
+
+\subsection{Beispiel einer Relation: Teilbarkeit}
 
 Seien $a, b \in \mathbb{N}$. Dann ist $a$ \emph{Teiler von} $b$ genau dann, wenn
 es ein $m \in \mathbb{N}$ gibt, so dass gilt: $a \cdot m = b$.
@@ -21,27 +38,7 @@ $\le_\tau $ ist eine Untermenge von $\mathbb{N} \times \mathbb{N}$.
 
 $(a,b) $ ist ein Element von $\le_\tau$, wenn gilt $a \le_\tau b$.
 
-\paragraph{Eigenschaften von Relationen:}
 
-Wenn $R \subseteq A \times A$ eine Relation ist, dann ist $R$:
-\begin{itemize}
-\item \emph{symmetrisch}, falls für $(a, b) \in \mathbb{R}$ stets auch
-  $(b, a) \in \mathbb{R}$ gilt, z.B. Rechwinkligkeit: wenn $a \bot b$ ist,
-  dann ist $b \bot a$.
- \item \emph{antisymmetrisch} falls für $(a, b) \in \mathbb{R}$ und $(b, a) \in \mathbb{R}$  stets folgt: $a \equiv b$
- \item \emph{reflexiv} falls $(a, a) \in \mathbb{R}$ für alle $a$ in
-   $A$ gilt, z.B. Parallelität: Jede Gerade ist zu sich selbst parallel
- \item \emph{transitiv} falls aus $(a, b) \in \mathbb{R}$ und $(b, c)
-   \in \mathbb{R}$ folgt: $(a, c) \in \mathbb{R}$, z.B. Kleiner-Gleich
-   ``$\leq$'': Wenn $a \leq b$ und $b \leq c$, dann gilt $a \leq c$.
-\end{itemize}
-
-\noindent Eine Ordnung(-srelation) ist eine Relation, die antisymmetrisch,
-transitiv und reflexiv ist. \\ \indent {\bf Beispiel:} $\le_\tau$
-(Teiler von), $\le$ (kleiner gleich) \\
-
-\noindent Eine Äquivalenz(-relation) ist eine Relation, die symmetrisch,
-transitiv und reflexiv ist. \\ \indent {\bf Beispiel:} $=, \equiv$ (mod $n$) \\
 
 \noindent $T_n$ sei die Menge der Teiler von $n (n \in \mathbb{N})$. \\ \indent {\bf Beispiel:} $T_{12} = \{ 1, 2, 3, 4, 6, 12 \}$ \\
 
@@ -91,6 +88,28 @@ $a$ ----- $b$ statt $a \longrightarrow b$. \\
   \includegraphics[keepaspectratio=true]{../bilder/hassediagramm_von_60.pdf}
   \caption{Hassediagramm vom Teilerverband 6 und 60}
 \end{figure}
+
+\subsection{Klassen von Relationen}
+
+\begin{figure}[h]
+  \includegraphics[scale=0.7,keepaspectratio=true]{../bilder/klassen_von_relationen.pdf}
+  \caption{Arten von Relationen}
+\end{figure}
+
+\begin{itemize}
+\item \emph{Totalordung} oder \emph{lineare Ordnung:} Für jedes
+  beliebige 2 Elemente x,y der Grundmenge ($x \ne y$) ist stets die
+  Relation xRy oder yRx erfüllt. \textbf{Beispiel:} $\le_\tau$ (Teiler
+  von), $\le$ (kleiner gleich)
+\item \emph{Quasiordnung:} für 3 Elemente $a,b,c$ der Grundmenge muss gelten:
+  \begin{itemize}
+  \item $a\lesssim a$ (Reflexivität)
+  \item $a\lesssim b\lesssim c \implies a \lesssim c$ (Transivität)
+  \end{itemize}
+\item \emph{Äquivalenz(-relation)}  \textbf{Beispiel:} $=, \equiv$ (mod $n$)
+\end{itemize}
+
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "script"
