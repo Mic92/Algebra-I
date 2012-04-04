@@ -1,0 +1,37 @@
+Jede natürliche Zahl $n \ge 2$ besitzt eine eineindeutige
+Primfaktorzerlegung.
+
+Die dazugehörige Abbildung $\kappa:= N^P \rightarrow N_+, \alpha
+\mapsto \Pi_{p \in P} p^{\alpha(p)}$, welche die Primzahlen auf die
+natürliche Zahl abbildet, ist bijektiv.
+
+Der kleinste gemeinsame Teiler und das größte gemeinsame Vielfache
+lassen folgender maßen berechnen:
+
+a und b sind zwei Zahlen, welche sich in jeweils 2 Multimenge von Primzahlen
+zerlegen lassen.
+\begin{align*}
+  a &= p_1^{a1} * p_2^{a2} * p_3^{a3}\\
+  b &= p_1^{b1} * p_2^{b2} * p_3^{b3}\\
+\end{align*}
+Der größten gemeinsamen Teiler setzt sich aus dem Produkt der
+Primzahlen zusammen, welche in beiden Mengen enthalten sind
+(Durchschnitt). Beim kleinsten gemeinsamen Vielfachen wird die
+Vereinigungsmenge beider Primzahlmengen multipliziert.
+\begin{align*}
+  ggT(a,b) &= p_1^{min(a1,b1)} * p_1^{min(a2,b2)} * p_1^{min(a3,b3)}\\
+  kgV(a,b) &= p_1^{max(a1,b1)} * p_1^{max(a2,b2)} * p_1^{max(a3,b3)}\\
+\end{align*}
+
+Beispiel:
+\begin{align*}
+  600 &= 2^3 * 3^1 * 5^2\\
+  160 &= 2^3 * 4^1 * 5^1\\
+  ggT(600, 160) &= 2^3 * 5^1\\
+  kgV(600, 160) &= 2^3 * 3^1 * 4^1 * 5^2\\
+\end{align*}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "script"
+%%% End:
