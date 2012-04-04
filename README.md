@@ -24,4 +24,4 @@ chaosbastler (Christian)
 
 js75 (Jan)
 
-[github-pdf]: https://github.com/Mic92/Algebra-I/raw/master/script.pdf
+[github-pdf]: https://github.com/downloads/Mic92/Algebra-I/script.pdf
