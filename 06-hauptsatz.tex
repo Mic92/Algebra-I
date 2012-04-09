@@ -1,34 +1,76 @@
 Jede natürliche Zahl $n \ge 2$ besitzt eine eineindeutige
 Primfaktorzerlegung.
+\begin{align*}
+\mathbb N^{(A)} := \{ \alpha \in \mathbb N^{(A)} | \supp(\alpha) \text{endlich}
+\}
+\end{align*}
 
-Die dazugehörige Abbildung $\kappa:= N^P \rightarrow N_+, \alpha
-\mapsto \Pi_{p \in P} p^{\alpha(p)}$, welche die Primzahlen auf die
-natürliche Zahl abbildet, ist bijektiv.
+\paragraph{Allgemein:} $B^A$ ist die Menge aller Abbildungen von $A$ nach $B$.
+Die Abbildung $f: A \rightarrow B, x \mapsto f x$ ordnet jedem $x \in A$ genau
+ein $f x \in B$ zu.
+
+$A = P = $ sei die Menge der Primzahlen.  
+Die dazugehörige Abbildung $\kappa:= \mathbb N^P \rightarrow \mathbb N_+,
+\alpha \mapsto \prod \limits_{p \in P} p^{\alpha(p)}$, welche die Primzahlen
+auf die natürlichen Zahlen abbildet, ist bijektiv.
+
+\paragraph{Satz}: Für $f: B \rightarrow \mathbb N$ ist $\prod \limits_{p \in B}
+f(p)$ das Produkt über alle $f(p)$, wo $p$ alle Elemente aus $B$ durchläuft.
+Genauer gesagt ist diese Funktion \glqq rekursiv definiert\grqq: Sei $b \in B$.
+Dann sei $\prod \limits{p \in B} f p := f b \cdot \prod \limits_{p \in B}
+f p_{ \{b \}}$, wo $b$ unendliche Menge sei (hängt nicht von $b \in B$ ab), da
+$(\mathbb N_+, \cdot, 1)$ ein kommutatives Monoid ist. Analog verhält es sich
+mit der Summe $\sum \limits_{p \in B} fp$.
+
+\subsection{Kleinster gemeinsamer Teiler und größtes gemeinsames Vielfaches}
 
 Der kleinste gemeinsame Teiler und das größte gemeinsame Vielfache
-lassen folgender maßen berechnen:
+lassen sich wie folgt berechnen:
 
-a und b sind zwei Zahlen, welche sich in jeweils 2 Multimenge von Primzahlen
-zerlegen lassen.
+$a$ und $b$ sind zwei Zahlen, welche sich in jeweils 2 Multimengen von
+Primzahlen zerlegen lassen.
 \begin{align*}
   a &= p_1^{a1} * p_2^{a2} * p_3^{a3}\\
   b &= p_1^{b1} * p_2^{b2} * p_3^{b3}\\
 \end{align*}
-Der größten gemeinsamen Teiler setzt sich aus dem Produkt der
+Der größte gemeinsame Teiler setzt sich aus dem Produkt der
 Primzahlen zusammen, welche in beiden Mengen enthalten sind
 (Durchschnitt). Beim kleinsten gemeinsamen Vielfachen wird die
 Vereinigungsmenge beider Primzahlmengen multipliziert.
 \begin{align*}
-  ggT(a,b) &= p_1^{min(a1,b1)} * p_1^{min(a2,b2)} * p_1^{min(a3,b3)}\\
-  kgV(a,b) &= p_1^{max(a1,b1)} * p_1^{max(a2,b2)} * p_1^{max(a3,b3)}\\
+  \ggT(a,b) &= p_1^{\min(a1,b1)} * p_1^{\min(a2,b2)} * p_1^{\min(a3,b3)}\\
+  \kgV(a,b) &= p_1^{\max(a1,b1)} * p_1^{\max(a2,b2)} * p_1^{\max(a3,b3)}\\
 \end{align*}
 
 Beispiel:
 \begin{align*}
   600 &= 2^3 * 3^1 * 5^2\\
   160 &= 2^3 * 4^1 * 5^1\\
-  ggT(600, 160) &= 2^3 * 5^1\\
-  kgV(600, 160) &= 2^3 * 3^1 * 4^1 * 5^2\\
+  \ggT(600, 160) &= 2^3 * 5^1\\
+  \kgV(600, 160) &= 2^3 * 3^1 * 4^1 * 5^2\\
+\end{align*}
+
+\paragraph{Satz:} Für alle $m, n \in \mathbb N_+$ gilt:
+\begin{align*}
+m \cdot n &= (m \lor_{\tau} n) \cdot (m \land_{\tau} n)\\
+&= \kgV(m,n) \cdot \ggT(m,n)
+\end{align*}
+
+\paragraph{Beweis} mit der \glqq Gemüseformel\grqq:
+\begin{align*}
+\alpha + \beta = \alpha \lor \beta + \alpha \land \beta
+\end{align*}
+Seien $\alpha, \beta \in \mathbb N^{(P)}$ mit $\kappa \alpha = m$ \& $\kappa
+\beta = n$. Dann gilt $\kappa(\alpha + \beta) = \kappa(\alpha) + \kappa(\beta)$.
+Also ist
+\begin{align*}
+m \cdot n &= \kappa(\alpha + \beta)\\
+ &= \kappa(\alpha \lor \beta + \alpha \land
+\beta)\\
+&= \kappa(\alpha \lor \beta) \cdot \kappa(\alpha \land \beta)\\
+&= (\kappa \alpha \lor_{\tau} \kappa \beta) \cdot (\kappa \alpha \land_{\tau}
+\kappa \beta)\\
+&= (m \lor_{\tau} n) \cdot (m \land_{\tau} n) \qed
 \end{align*}
 
 %%% Local Variables:

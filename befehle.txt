@@ -7,3 +7,10 @@ Zur besseren Übersicht werden hier alle selbst definierten Befehle aufgeführt.
 \Abb, \Map werden als Abb() und Map() dargestellt, nicht kursiv, keine Argumente.
 
 \Inj, \Surj, \Bij werden als Inj(), Surj(), Bij() dargestellt, nicht kursiv, keine Argumente.
+
+\ggT, \kgV werden als ggT() und kgV() dargestellt, nicht kursiv, keine Argumente.
+
+\min, \max werden als min() und max() dargestellt, nicht kurisv, keine Argumente.
+
+TODO:
+Befehle für N, R, Z und Q einführen.
