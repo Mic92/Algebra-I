@@ -89,6 +89,34 @@ $a$ ----- $b$ statt $a \longrightarrow b$. \\
   \caption{Hassediagramm vom Teilerverband 6 und 60}
 \end{figure}
 
+\subsection{Division mit Rest}
+
+Die \emph{Division mit Rest} besagt, dass für 2 Zahlen $n$ und $m$
+(ungleich 0) eindeutig bestimmte Zahlen $a$ und $b$ existieren für die gilt:
+\begin{itemize}
+\item $n = a * m + b$
+\item $0 \le n < b$
+\end{itemize}
+
+Der Modulo berechnet den Rest $b$ der Division $n/m$. Schreibweise: $n \bmod a = b$
+
+Beim Rechnen mit Modulo lassen sich häufig komplizierte Rechnung
+vereinfachen/optimieren. Dabei gelten folgende Regeln:
+\begin{align*}
+  (a+b) \bmod n       &= ((a \bmod n) + (b \bmod n)) \bmod n \\
+  (a-b) \bmod n       &= ((a \bmod n) - (b \bmod n)) \bmod n \\
+  (a \cdot b) \cdot n &= ((a \bmod n) \cdot (b \bmod n)) \bmod n \\
+\end{align*}
+
+\paragraph{Beispiele}
+\begin{align*}
+  (3 \bmod 7)&= 3   \;\;   (17 \bmod 5)= 2   \;\;    (-9 \bmod 17)= 8 \\
+  5^{167} \bmod 7 &= (5^2 \bmod 7) (5^3 \bmod 7)^{55} \bmod 7 \\
+                 &= 4 \cdot (4 \cdot 5)^{55} \bmod 7 \\
+                 &= 4 \cdot (-1)^{55} \bmod 7\\
+                 &= -4 \bmod 7 = 3\\
+\end{align*}
+
 \subsection{Klassen von Relationen}
 
 \begin{figure}[h]
