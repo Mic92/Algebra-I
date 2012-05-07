@@ -3,6 +3,7 @@
 *.log
 *.out
 *.toc
+script.pdf # Nur als Github-Download anbieten!
 # Auctex spezifisches Verzeichnis
 auto/**
 *.synctex.gz
