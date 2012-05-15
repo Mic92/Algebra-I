@@ -33,6 +33,29 @@ Daraus folgt wie zu erwarten:
   r_{2}(a) + r_{2}(b) + r_{2}(c) + r_{2}(d) &= 2 + 2 + 3 + 1 = 8
 \end{align*}
 
+
+\subsection{Inzidenzstruktur}
+Die Inzidenzstruktur $(P,B,I)$ ist ein Tupel bestehend aus:
+\begin{itemize}
+\item einer Menge P (bezeichnet als Punktmenge)
+\item einer Menge B (bezeichnet als Block/Geradenmenge)
+\item und einer Inzidenzrelation I (also $I \subset P\times B$ bzw.
+  $I = \{(p,b) \in B \times P\}$)
+\end{itemize}
+
+\paragraph{taktische Konfiguration}
+Eine Inzidenzstruktur $(P,B,I)$ heißt taktische Konfiguration, falls
+für alle $b\in B$ und $p \in P$ folgendes gilt:
+\begin{itemize}
+\item es gibt gleich viele Blöcke/Geraden b pro Punkt p (Verbindungszahl)
+\item es gibt gleich viele Punkte p pro Block/Gerade b (Schnittzahl)
+\end{itemize}
+
+Beispiel Würfel:
+
+Ein Würfel hat 8 Ecken und 6 Flächen. Pro Ecke gibt es 3 angrenzende
+Fläche und pro Fläche 4 Ecken. $3 * 8 = 24 = 6 * 4$
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "script"
