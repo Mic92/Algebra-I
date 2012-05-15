@@ -4,6 +4,16 @@ require "mime/types"
 
 require 'github_api'
 
+# Dieses Ruby-Script lädt halb-automatisch die neuen PDF-Dokumente hoch.
+# Dafür wird das Passwort meines Github-Accounts benötigt.
+# Es wird eine Standartinstallation von ruby benötigt.
+# und das github_api gem
+# Installation
+# $ apt-get install ruby && gem install github_api
+# Benutzung
+# $ rake upload
+# Desweiteren kann es PDF-Dokumente erstellen
+# $ rake pdf
 
 def config
   # in this Rakefile we can allow that
