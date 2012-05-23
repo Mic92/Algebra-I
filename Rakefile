@@ -91,20 +91,22 @@ task :upload => [:pdf] do
     system 'stty echo'
     puts
 
-    github = Github.new :basic_auth => "#{user}:#{password}"
 
-    downloads = github.repos.downloads(config['repo-owner'], config['github-repo'])
+    github = Github.new login: user, password: password
+
+    downloads = github.repos.downloads.list config['repo-owner'], config['github-repo']
     downloads.each do |download|
         if download.name == File.basename(file) then
             puts 'Delete old download...'
-            github.repos.delete_download config['repo-owner'],
+            github.repos.downloads.delete config['repo-owner'],
                 config['github-repo'], download.id
         end
     end
 
     content_type = MIME::Types.type_for(file)[0].to_s
 
-    resource = github.repos.create_download config['repo-owner'],
+    puts "Create download"
+    resource = github.repos.downloads.create config['repo-owner'],
         config['github-repo'],
         :name => File.basename(file),
         :size => File.size(file),
@@ -112,17 +114,9 @@ task :upload => [:pdf] do
         :content_type => content_type
 
     puts 'Upload new download...'
-    exec 'curl', '-F', "key=#{resource.path}",
-         '-F', "acl=#{resource.acl}",
-         '-F', "success_action_status=201",
-         '-F', "Filename=#{resource.name}",
-         '-F', "AWSAccessKeyId=#{resource.accesskeyid}",
-         '-F', "Policy=#{resource.policy}",
-         '-F', "Signature=#{resource.signature}",
-         '-F', "Content-Type=#{resource.mime_type[0]['Content-Type']}",
-         '-F', "file=@#{file}",
-             resource.s3_url
-    puts '\n...finished!'
+    uploader = Github::S3Uploader.new resource, file
+    uploader.send
+    puts '...finished!'
 end
 
 
