@@ -1,0 +1,26 @@
+% RSA
+
+\subsection{Emma}
+\label{sec:emma}
+
+\begin{itemize}
+\item wählt Primzahlen (p,q)
+\item berechne $phi = (p-1)(q-1)$ und $N = p \cdot q$
+\item ein zu $phi$ teilerfremdes $e$
+\item Bedingung: $1 < e < p\cdot q$
+\item sendet $(N, e)$ an Susi
+\end{itemize}
+
+\subsection{Susi}
+\begin{itemize}
+\item Klartext bestehend aus der Nachricht $m_{1}..m_{k}$
+\item verschlüsselt: $c_{i} = (m_{i})^{e} (mod N)$
+\item sendet Codetext:  $c_{1}..c_{k}$ an Emma
+\end{itemize}
+
+\subsection{Emma}
+\begin{itemize}
+\item dekodiert
+\item $m_{i} = (c_{i})^{d} (mod N)$
+\item wobei d folgend berechnet wird: $d \cdot e = 1 \mod ((p-1)(q-1))$
+\end{itemize}

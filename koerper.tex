@@ -1,0 +1,58 @@
+
+\subsection{Monoid}
+Ein Monoid ist ein Tripel $(M,*,e)$, bestehend aus:
+\begin{itemize}
+\item einer Menge $M$
+\item einer Relation *: $MxM \rightarrow M (a,b) \mapsto a*b$
+\item und einem neutralen Element $e \in M$ für das gilt: $e*a = a*e = a$
+\end{itemize}
+
+Beispiele:
+\begin{itemize}
+\item $(N_{0}, +, 0)$
+\item $(N, *, 1)$
+\end{itemize}
+
+Als Untermonoid $(U,*,e)$ bezeichnet man ein Monoid bei dem die Menge
+U Teilmenge von M ist
+
+Ein Monoid ist abelsch, wenn es kommutativ ist. d.h $a*b=b*a$
+
+$(\mathbb{N},\cdot,1)$ ist abelsch da $a \cdot b = b \cdot a$ für
+natürliche Zahlen gilt. $(\mathbb{N}^{2x2},\cdot,E_2)$ ($E_2$ ist die
+Einheitsmatrix) ist nicht abelsch, da die Matrizenmultiplikation nicht
+kommutativ ist.
+
+Satz:  Sei $\mathbb{A} = (A,*,1)$ endliches Monoid, dann sind
+äquivalent:
+\begin{itemize}
+\item $\mathbb{A}$ ist links-kürzbar, d.h $x \cdot y = x \cdot z \Rightarrow
+  y = z$
+\item $\mathbb{A}$ ist rechts-kürzbar, d.h $x \cdot z = y \cdot z \Rightarrow
+  x = y$
+\item $\mathbb{A}$ bildet Gruppen, d.h $\forall x \in \mathbb{A}
+  \exists y \in A$: $x * y = 1 = y * x$
+\end{itemize}
+
+\subsection{Semiring}
+Ein Semiring $(M, +, *, 0, 1)$ besteht aus
+\begin{itemize}
+\item einer nicht leeren Menge M
+\item einer Relation (Addition) +: $MxM \rightarrow M$
+\item einer Relation (Multiplikation) +: $MxM \rightarrow M$
+\item einem Nullelement 0: $0+a = a+0 = a$
+\item einem Einselement 1: $1*a = a*1 = a$
+\end{itemize}
+
+Beispiele:
+\begin{itemize}
+\item (N, +, *, 0, 1)
+\item Boolescher Halbring $(B, +, *, 0, 1)$ wobei $B=\{0, 1\}$
+\item $(Z_{N}, +, *, 0, 1)$ (für RSA relevant)
+\end{itemize}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "script"
+%%% End:
